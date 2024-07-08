@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* 요소들을 필요에 따라 여러 줄에 걸쳐 표시하도록 설정합니다 */
+    padding: 2rem;
+}
+
+article {
+    flex: 1 1 70%; /* article 요소가 전체 너비의 일정 비율을 차지하도록 설정합니다 */
+    background: #f4f4f4;
+    padding: 1rem;
+    margin-right: 2rem; /* article 요소들 사이의 간격을 설정합니다 */
+    margin-bottom: 1rem; /* article 요소들 아래의 간격을 설정합니다 */
+    box-sizing: border-box; /* 패딩을 포함한 박스 모델을 사용합니다 */
+}
+
+aside {
+    flex: 1 1 30%; /* aside 요소가 전체 너비의 일정 비율을 차지하도록 설정합니다 */
+    background: #f4f4f4;
+    padding: 1rem;
+    position: sticky;
+    top: 2rem; /* 적절한 값으로 설정하여 겹치지 않도록 조정 */
+    order: 2; /* article 다음에 위치하도록 순서를 조정합니다 */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    clear: both; /* footer를 화면의 아래로 끌어내려주는 clear 속성을 사용합니다 */
+    width: 100%; /* footer 요소의 너비를 100%로 설정합니다 */
+    position: relative; /* footer 요소에 position: relative;을 추가합니다 */
+    margin-top: 2rem; /* main 요소의 아래에 여백을 줍니다 */
+}
+
+.ad {
+    margin-bottom: 1rem;
+}
+
+.ad img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 모바일 화면에서 article 요소들이 세로로 나오도록 설정 */
+@media (max-width: 768px) {
+    article {
+        flex: 0 0 100%; /* 화면이 작아질 때는 요소들이 세로로 표시되도록 합니다 */
+        margin-right: 0; /* 모바일 화면에서는 간격을 없앱니다 */
+    }
+
+    aside {
+        flex: 0 0 100%; /* 모바일 화면에서는 aside 요소도 세로로 표시되도록 합니다 */
+        position: static; /* 모바일 화면에서는 sticky를 해제합니다. */
+    }
+}
