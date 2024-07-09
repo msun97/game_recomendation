@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 게임 추천 - Game start!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="suggest.html">게임 추천</a></li>
+                <li><a href="event.html">게임 소식</a></li>
+                <li><a href="board.html">자유게시판</a></li>
+                <li><a href="qna.html">문의사항</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="suggest">
+        <h2>AI 게임 추천</h2>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="게임 이름 검색" />
+            <select id="genre-select">
+                <option value="">장르 선택</option>
+                <option value="RPG">RPG</option>
+                <option value="FPS">FPS</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Strategy">Strategy</option>
+            </select>
+            <select id="platform-select">
+                <option value="">플랫폼 선택</option>
+                <option value="PC">PC</option>
+                <option value="Console">콘솔</option>
+                <option value="Mobile">모바일</option>
+            </select>
+            <button type="submit">검색</button>
+        </form>
+        <div id="recommendation-list"></div>
+        <aside class="advertise">
+            <div class="ad">
+                <a href="https://example.com">
+                    <img src="path/to/your/ad-image.jpg" alt="광고 이미지">
+                </a>
+            </div>
+            <div class="ad">
+                <a href="https://example.com">
+                    <img src="path/to/your/ad-image2.jpg" alt="광고 이미지">
+                </a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        Copyright 2024. MSK All rights reserved.
+    </footer>
+    <script src="suggest.js"></script>
+</body>
+</html>
