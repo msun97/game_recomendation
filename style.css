@@ -85,6 +85,42 @@ main.suggest {
     border-bottom: none;
 }
 
+
+main.notification{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.noti, .event {
+    flex: 1 1 45%;
+    background: #f4f4f4;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+#notification-list, #discount-list {
+    margin-bottom: 1rem;
+}
+
+#notification-list div, #discount-list div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#notification-list div:last-child, #discount-list div:last-child {
+    border-bottom: none;
+}
+
+#notification-list a, #discount-list a {
+    display: block;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+    margin-top: 1rem;
+}
 article {
     flex: 1 1 70%; /* article 요소가 전체 너비의 일정 비율을 차지하도록 설정합니다 */
     background: #f4f4f4;
