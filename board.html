@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game start! - 자게</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="suggest.html">게임 추천</a></li>
+                <li><a href="event.html">게임 소식</a></li>
+                <li><a href="board.html">자유게시판</a></li>
+                <li><a href="qna.html">문의사항</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="board">
+        <section class="board-content">
+            <div class="board-header">
+                <select id="category-select">
+                    <option value="all">전체</option>
+                    <option value="talk">잡담</option>
+                    <option value="refer">공략</option>
+                    <option value="friend">친구구함</option>
+                </select>
+                <button id="write-button">글쓰기</button>
+            </div>
+            <div id="post-list"></div>
+            <div id="pagination"></div>
+        </section>
+    </main>
+        <aside class="advertise">
+            <div class="ad">
+                <a href="https://example.com">
+                    <img src="path/to/your/ad-image.jpg" alt="광고 이미지">
+                </a>
+            </div>
+            <div class="ad">
+                <a href="https://example.com">
+                    <img src="path/to/your/ad-image2.jpg" alt="광고 이미지">
+                </a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        Copyright 2024. MSK All rights reserved.
+    </footer>
+    <script src="board-script.js"></script>
+</body>
+</html>

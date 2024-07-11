@@ -121,6 +121,96 @@ main.notification{
     text-decoration: none;
     margin-top: 1rem;
 }
+
+main.board {
+    width: 100%;
+}
+
+.category {
+    flex: 1;
+}
+
+.category nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.category nav ul li {
+    margin: 0 1rem;
+}
+
+.category nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+main.board {
+    width: 100%;
+    max-width: 1200px; /* 최대 너비를 1200px로 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.board-content {
+    flex: 3;  /* 광고 영역을 줄이고 게시판을 넓게 만듭니다 */
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#category-select, #write-button {
+    padding: 0.5rem;
+}
+
+#write-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#post-list {
+    background: #fff;
+    padding: 1rem;
+}
+
+.post {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#pagination button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.advertise {
+    flex: 1;
+    padding-left: 1rem;
+    max-width: 1200px; /* 최대 너비를 1200px로 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
 article {
     flex: 1 1 70%; /* article 요소가 전체 너비의 일정 비율을 차지하도록 설정합니다 */
     background: #f4f4f4;
@@ -164,6 +254,31 @@ footer {
 
 /* 모바일 화면에서 article 요소들이 세로로 나오도록 설정 */
 @media (max-width: 768px) {
+    .board-header {
+        flex-direction: column;
+    }
+
+    #category-select {
+        margin-right: 0;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    main.board {
+        flex-direction: column;
+    }
+    
+    #category-select, #write-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .category, .board-content {
+        width: 100%;
+    }
+
     article {
         flex: 0 0 100%; /* 화면이 작아질 때는 요소들이 세로로 표시되도록 합니다 */
         margin-right: 0; /* 모바일 화면에서는 간격을 없앱니다 */
